@@ -1,0 +1,5 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\Dragon_NinjaL\source\repos\KidsClubApp\KidsClubApp\Client\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\Dragon_NinjaL\source\repos\KidsClubApp\KidsClubApp\Client\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication" Path="C:\Users\Dragon_NinjaL\.nuget\packages\microsoft.aspnetcore.components.webassembly.authentication\5.0.13\build\..\staticwebassets\" />
+</StaticWebAssets>

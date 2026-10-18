@@ -1,0 +1,12 @@
+C:\Users\Dragon_NinjaL\source\repos\KidsClubApp\KidsClubApp\Shared\bin\Debug\net5.0\KidsClubApp.Shared.deps.json
+C:\Users\Dragon_NinjaL\source\repos\KidsClubApp\KidsClubApp\Shared\bin\Debug\net5.0\KidsClubApp.Shared.dll
+C:\Users\Dragon_NinjaL\source\repos\KidsClubApp\KidsClubApp\Shared\bin\Debug\net5.0\ref\KidsClubApp.Shared.dll
+C:\Users\Dragon_NinjaL\source\repos\KidsClubApp\KidsClubApp\Shared\bin\Debug\net5.0\KidsClubApp.Shared.pdb
+C:\Users\Dragon_NinjaL\source\repos\KidsClubApp\KidsClubApp\Shared\obj\Debug\net5.0\KidsClubApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dragon_NinjaL\source\repos\KidsClubApp\KidsClubApp\Shared\obj\Debug\net5.0\KidsClubApp.Shared.AssemblyInfoInputs.cache
+C:\Users\Dragon_NinjaL\source\repos\KidsClubApp\KidsClubApp\Shared\obj\Debug\net5.0\KidsClubApp.Shared.AssemblyInfo.cs
+C:\Users\Dragon_NinjaL\source\repos\KidsClubApp\KidsClubApp\Shared\obj\Debug\net5.0\KidsClubApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Dragon_NinjaL\source\repos\KidsClubApp\KidsClubApp\Shared\obj\Debug\net5.0\KidsClubApp.Shared.dll
+C:\Users\Dragon_NinjaL\source\repos\KidsClubApp\KidsClubApp\Shared\obj\Debug\net5.0\ref\KidsClubApp.Shared.dll
+C:\Users\Dragon_NinjaL\source\repos\KidsClubApp\KidsClubApp\Shared\obj\Debug\net5.0\KidsClubApp.Shared.pdb
+C:\Users\Dragon_NinjaL\source\repos\KidsClubApp\KidsClubApp\Shared\obj\Debug\net5.0\KidsClubApp.Shared.csproj.AssemblyReference.cache

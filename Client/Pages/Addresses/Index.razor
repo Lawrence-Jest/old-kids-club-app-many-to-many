@@ -1,0 +1,82 @@
+﻿
+@page "/addresses/"
+@inject HttpClient _client
+@inject IJSRuntime js
+@attribute [Authorize]
+
+<h3 class=" card-title">Address List</h3>
+<hr />
+<br />
+
+@if(Addresses == null)
+            {
+                <div class=" alert alert-info">Loading Addresses...</div>
+            }
+            else
+            {
+                <table class=" table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>House Number</th>
+                            <th>Street Name</th>
+                            <th>City</th>
+                            <th>Greater Area</th>
+                            <th>Country</th>
+                            <th>Postal Code</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var address in Addresses)
+                        {
+                        <tr>
+                            <td>@address.HouseNumber</td>
+                            <td>@address.StreetName</td>
+                            <td>@address.City</td>
+                            <td>@address.GreaterAddressArea</td>
+                            <td>@address.Country</td>
+                            <td>@address.PostalCode</td>                           
+                            <td>
+                                <a href= "/Addresses/view/@address.AddressId" class= "btn btn-primary">
+                                    <span class= "oi oi-book"></span>
+                                </a>
+                                <a href= "/addresses/edit/@address.AddressId" class= "btn btn-warning">
+                                    <span class= "oi oi-pencil"></span>
+                                </a>
+                                <button class= "btn btn-danger" @onclick="@(()=>Delete(address.AddressId))"><span class= "oi oi-delete"></span></button>
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+
+
+
+@code {
+    private List<Address> Addresses;
+
+    protected async override Task OnInitializedAsync()
+    {
+        Addresses = await _client.GetFromJsonAsync<List<Address>>($"{Endpoints.AddressesEndpoint}");
+    }
+
+
+    async Task Delete(int addressId)
+    {
+        var address = Addresses.First(q => q.AddressId == addressId);
+
+        var confirm = await js.InvokeAsync<bool>("confirm", $"Do you want to delete {address.HouseNumber} {address.StreetName}?");
+
+        if (confirm)
+        {
+            await _client.DeleteAsync($"{Endpoints.AddressesEndpoint}/{addressId}");
+
+            await OnInitializedAsync();
+        }
+
+
+
+
+    }
+}
